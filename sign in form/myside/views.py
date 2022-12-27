@@ -17,32 +17,13 @@ def Home(request):
     djtext5 = request.GET.get('password', 'default')
     print(djtext3)
     print(djtext4)
-    print(djtext5)
-    
-    # analized = djtext
-    
-   
-            
-    
-    #analized = djtext1
-    #vv = djtext2
-    
+    print(djtext5)    
     vvt = {
         'purpose':'heading send to py file ',
-        #'analaze_text':analized,
-        #'analaze_text1':vv,
+        
         'uname':djtext3,
         'Email':djtext4,
         'pass':djtext5,
         
     }
     return render(request, 'home.html', vvt)
-
-    #return render(request, 'home.html', vvt)
-
-    #return HttpResponse("hello world")
-    #return render(request,'aa.html') video 9
-def besic(request):
-   return render(request, 'besic.html')
-def anal(request):
-   return render(request, 'index1.html')
